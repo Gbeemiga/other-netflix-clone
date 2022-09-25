@@ -1,0 +1,395 @@
+/* Importing google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Some page resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* style the header */
+header{
+    background-image: radial-gradient(circle, transparent, black), url("./assets/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+nav #logo img{
+    width: 150px;
+
+}
+nav button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #e50914;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+/* style the header content */
+header .content {
+    padding: 0px 30px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .content span {
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 670px;
+}
+
+header .content h1 {
+    font-size: 3.125rem;
+}
+header .content p {
+    font-size: 1.825rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* styling the header content form */
+
+header .content form {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    max-width: 670px;
+}
+
+header .content input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+header .content form button {
+background-color: #e50918;
+display: flex;
+color: white;
+cursor: pointer;
+border: none;
+padding: 10px;
+}
+
+header .content form button img {
+    width: 24px;
+    position: relative;
+    top: 11px;
+}
+
+/* styles for enjoy */
+
+#enjoy {
+background-color: black;
+color: white;
+display: flex;
+align-items: center;
+padding: 50px 5%;
+border-top: 8px solid #24252a;
+}
+
+#enjoy figure {
+    position: relative;
+}
+
+#enjoy figure video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -53%) ;
+
+}
+
+#enjoy figure img {
+    position: relative;
+    z-index: 2;
+}
+
+#enjoy .details h1 {
+   font-size: 3.125rem;
+}
+#enjoy .details p {
+    font-size: 1.625rem;
+    padding: 10px 0px;
+}
+/* styles for download  */
+
+#download {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    gap: 0px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    border-top: 8px solid #24252a;
+}
+
+#download figure {
+    position: relative;
+    height: 100%;
+    transform: translateX(-24%);
+}
+
+#download figure button {
+    justify-content:space-between ;
+    padding: 0.5em 0.75em;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    bottom: 9%;
+    color: white;
+    transform: translateX(-50%);
+    background: #000;
+    display: flex;
+    width: 70%;
+    min-width: 15em;
+    align-items: center;
+    -webkit-box-align: center;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 2em 0 #000;
+    border-radius: 0.75em;
+}
+
+#download figure button .box {
+    padding-left: 10px;
+    width: 100px;
+    height: 7rem; 
+}
+
+#download .outline {
+    font-size: 2rem;
+}
+
+#download .outline p {
+    font-size: 1.635rem;
+}
+
+#download figure button span {
+    position: relative;
+    padding-right: 40px;
+}
+
+#download figure button span p {
+    color: #0071eb;
+    position: relative;
+    left: -16px;
+    padding: 5px;
+    font-size: small;
+}
+
+/* styling for watch */
+
+#watch {
+    background-color: black;
+    color: white;
+    height: 270px;
+    width: 100%;
+    border-top: 8px solid #24252a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#watch span {
+    width: 50%;
+    padding-left: 3em;
+}
+
+;#watch p {
+    font-size: 1.635rem;
+}
+
+/* styling for kids */
+
+#kids {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    height: auto;
+    border-top: 8px solid #24252a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 5rem 5rem 11rem ;
+}
+
+#kids img {
+    width: 32rem;
+}
+
+#kids span {
+    width: 52%;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-left: 3rem;
+}
+
+#kids span p {
+    font-size: 1.635rem;
+}
+
+/* styling for frequently */
+
+#frequently {
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    color: white;border-top: 8px solid #24252a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#frequently h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 3rem;
+}
+
+#frequently button {
+    width: 50%;
+    height: 60px;
+    background-color: #303030;
+    border: none;
+    text-align: left;
+    margin: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-top: 5px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#frequently button:hover {
+    background-color: #6b6b6b;
+}
+
+#frequently span {
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 690px;
+}
+
+#frequently form {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    max-width: 750px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    padding-left: 20px;
+}
+
+#frequently form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+#frequently form button {
+position: relative;
+right: 4px;
+bottom: 4.5px;
+background-color: #e50918;
+display: flex;
+color: white;
+cursor: pointer;
+align-items: center;
+width: 200px;
+border: none;
+padding: 20px;
+font-size: 2.7rem;
+padding-bottom: 20px;
+}
+
+#frequently form button img {
+    position: relative;
+}
+
+#frequently form button span {
+    position: relative;
+    top: 5px;
+}
+
+/* styling the footer */
+
+#questions {
+    background-color: black;
+    width: 100%;
+    color: #757575;
+    border-top: 8px solid #24252a;
+    padding: 60px 70px 40px;
+}
+
+#questions .contact a {
+    text-decoration: none;
+    color: #757575;
+    font-weight: 300;
+    font-size: 1.15rem;
+    padding-left: 272px;
+}
+
+#questions p {
+    padding-left: 273px;
+}
+
+#questions .questions {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 150px 0;
+}
+
+#questions .questions ul li a {
+    color: #757575;
+    text-decoration: none;
+
+}
+
+#questions .questions ul {
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+
+#questions .net {
+    font-size: 0.85rem;
+}
